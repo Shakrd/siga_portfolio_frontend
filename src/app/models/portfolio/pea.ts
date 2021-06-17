@@ -1,6 +1,9 @@
 
-import { Subject } from './../app/subject';
-import { SchoolPeriod } from './../app/school-period';
+
+
+import { SchoolPeriod } from '../app/school-period';
+import { Subject } from '../app/subject';
+
 
 
 export interface Pea {

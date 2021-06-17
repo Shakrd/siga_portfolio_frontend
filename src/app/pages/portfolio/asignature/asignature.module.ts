@@ -1,20 +1,15 @@
-
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { PortfolioComponent } from './portfolio.component';
-
+import { AsignatureComponent } from './asignature.component';
 
 
 
 @NgModule({
   declarations: [
-    PortfolioComponent,
-    
+    AsignatureComponent
   ],
   imports: [
     CommonModule
-  
-    
   ]
 })
-export class PortfolioModule { }
+export class AsignatureModule { }
