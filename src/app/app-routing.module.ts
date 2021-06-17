@@ -20,11 +20,19 @@ import {AuthGuard} from './shared/guards/auth.guard';
                         loadChildren: () => import('./pages/dashboard/dashboard.module').then(m => m.DashboardModule),
                         canActivate: [AuthGuard]
                     },
+<<<<<<< HEAD
                     /*{
                         path: 'user',
                         loadChildren: () => import('./pages/user/user.module').then(m => m.UserModule),
                         canActivate: [AuthGuard]
                     }*/
+=======
+                    /* {
+                        path: 'user',
+                        loadChildren: () => import('./pages/user/user.module').then(m => m.UserModule),
+                        canActivate: [AuthGuard]
+                    } */
+>>>>>>> 66d87adf4bdf40cd447e452dcdd9ca0bfb8229f8
                 ]
             },
             {
