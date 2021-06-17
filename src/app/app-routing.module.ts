@@ -1,5 +1,9 @@
-import {RouterModule} from '@angular/router';
-import {NgModule} from '@angular/core';
+
+import { NgModule, Component } from '@angular/core';
+
+
+import {Routes, RouterModule} from '@angular/router';
+
 
 // Application Components
 import {AppMainComponent} from './shared/components/main/app.main.component';
@@ -7,8 +11,25 @@ import {AppBlankComponent} from './shared/components/blank/app.blank.component';
 
 // Application Guards
 import {AuthGuard} from './shared/guards/auth.guard';
+import { PortfolioComponent } from 'src/portfolio/portfolio.component';
 
-@NgModule({
+
+const routes: Routes = [
+    { path: 'portfolio', component: PortfolioComponent }
+  ];
+  
+  @NgModule({
+    imports: [RouterModule.forRoot(routes)
+    
+    
+    ],
+    exports: [RouterModule]
+  })
+
+
+
+
+/* @NgModule({
     imports: [
         RouterModule.forRoot([
             {
@@ -31,8 +52,12 @@ import {AuthGuard} from './shared/guards/auth.guard';
                         path: 'user',
                         loadChildren: () => import('./pages/user/user.module').then(m => m.UserModule),
                         canActivate: [AuthGuard]
+<<<<<<< HEAD
                     } */
 >>>>>>> 66d87adf4bdf40cd447e452dcdd9ca0bfb8229f8
+=======
+                    } 
+>>>>>>> 1f52e1f6c05c76e3eaef80240249ad34748ee4dd
                 ]
             },
             {
@@ -44,6 +69,6 @@ import {AuthGuard} from './shared/guards/auth.guard';
         ], {scrollPositionRestoration: 'enabled'})
     ],
     exports: [RouterModule]
-})
+}) */
 export class AppRoutingModule {
 }

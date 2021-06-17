@@ -2,6 +2,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PortfolioComponent } from './portfolio.component';
+import {TabMenuModule} from 'primeng/tabmenu';
+
 
 
 
@@ -12,9 +14,8 @@ import { PortfolioComponent } from './portfolio.component';
     
   ],
   imports: [
-    CommonModule
-  
-    
+    CommonModule,
+    TabMenuModule,
   ]
 })
 export class PortfolioModule { }
