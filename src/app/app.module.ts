@@ -1,4 +1,3 @@
-import { PortfolioComponent } from './../portfolio/portfolio.component';
 // Angular Libs
 import {NgModule} from '@angular/core';
 import {FormsModule} from '@angular/forms';
@@ -36,7 +35,6 @@ import {MenuService} from './shared/services/app.menu.service';
 import {InterceptorService} from './interceptors/interceptor.service';
 import {SharedModule} from './pages/shared/shared.module';
 import {PasswordModule} from 'primeng/password';
-import {TabMenuModule} from 'primeng/tabmenu';
 
 @NgModule({
     imports: [
@@ -48,12 +46,12 @@ import {TabMenuModule} from 'primeng/tabmenu';
         HttpClientModule,
         SharedModule,
         NgxSpinnerModule,
+        // Primeng Modules
         CalendarModule,
         CheckboxModule,
         RadioButtonModule,
         InputSwitchModule,
         PasswordModule,
-        TabMenuModule,
     ],
     declarations: [
         AppBlankComponent,
@@ -66,7 +64,6 @@ import {TabMenuModule} from 'primeng/tabmenu';
         AppMenuitemComponent,
         AppRightPanelComponent,
         AppTopBarComponent,
-        PortfolioComponent,
     ],
     providers: [
         {provide: HTTP_INTERCEPTORS, useClass: InterceptorService, multi: true},
