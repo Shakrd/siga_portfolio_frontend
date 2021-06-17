@@ -1,2 +1,13 @@
-<p>portfolio works!</p>
-<portfolio.component></portfolio.component>
+<p>portfolio bfalsjdfblasjdbfasik</p>
+
+
+<p-tabMenu [model]="items" [activeItem]="items[0]"></p-tabMenu>
+
+
+<p-tabMenu [model]="items">
+    <ng-template pTemplate="item" let-item let-i="index">
+        //item content
+    </ng-template>
+</p-tabMenu>
+
+<app-portfolio></app-portfolio>
