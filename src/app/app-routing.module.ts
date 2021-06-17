@@ -1,17 +1,13 @@
-
-import { NgModule, Component } from '@angular/core';
-
-
-import { Routes, RouterModule } from '@angular/router';
-
+import {RouterModule} from '@angular/router';
+import {NgModule} from '@angular/core';
 
 // Application Components
 import { AppMainComponent } from './shared/components/main/app.main.component';
 import { AppBlankComponent } from './shared/components/blank/app.blank.component';
+import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 
 // Application Guards
-import { AuthGuard } from './shared/guards/auth.guard';
-import { PortfolioComponent } from './pages/portfolio/portfolio.component';
+import {AuthGuard} from './shared/guards/auth.guard';
 
 
 @NgModule({
@@ -53,6 +49,5 @@ import { PortfolioComponent } from './pages/portfolio/portfolio.component';
     ],
     exports: [RouterModule]
 })
-
 export class AppRoutingModule {
 }
